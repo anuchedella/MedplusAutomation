@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-01T21:56:06 EST" name="Suite" finished-at="2022-03-01T21:56:20 EST" duration-ms="14162">
+    <groups>
+    </groups>
+    <test started-at="2022-03-01T21:56:06 EST" name="Test" finished-at="2022-03-01T21:56:20 EST" duration-ms="14162">
+      <class name="com.orgtest.MedPlusSample">
+        <test-method signature="mint()[pri:0, instance:com.orgtest.MedPlusSample@3e6ef8ad]" started-at="2022-03-01T21:56:06 EST" name="mint" finished-at="2022-03-01T21:56:10 EST" duration-ms="4640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mint -->
+        <test-method signature="medplus()[pri:0, instance:com.orgtest.MedPlusSample@3e6ef8ad]" started-at="2022-03-01T21:56:10 EST" name="medplus" finished-at="2022-03-01T21:56:16 EST" depends-on-methods="com.orgtest.MintSample.mint" duration-ms="5601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medplus -->
+      </class> <!-- com.orgtest.MedPlusSample -->
+      <class name="com.orgtest.MintSample">
+        <test-method signature="mint()[pri:0, instance:com.orgtest.MintSample@625732]" started-at="2022-03-01T21:56:16 EST" name="mint" finished-at="2022-03-01T21:56:20 EST" duration-ms="3869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mint -->
+      </class> <!-- com.orgtest.MintSample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

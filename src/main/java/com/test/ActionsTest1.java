@@ -19,7 +19,6 @@ public class ActionsTest1 {
 		WebElement pwd = driver.findElement(By.xpath("//input[@id='txtPassword']"));
 		WebElement button = driver.findElement(By.xpath("//input[@id='btnLogin']"));
 		Actions a = new Actions(driver);
-		//a.moveToElement(username).sendKeys("Admin").build().perform();
 		a.sendKeys(username, "Admin").build().perform();
 		//a.moveToElement(pwd).sendKeys("admin123").build().perform();
 		a.sendKeys(pwd, "admin123").build().perform();

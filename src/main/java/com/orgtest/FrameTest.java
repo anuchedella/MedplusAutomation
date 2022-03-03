@@ -1,15 +1,18 @@
-package com.test;
+package com.orgtest;
 
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class FramesSample {
-
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+public class FrameTest {
+	
+	@Test(invocationCount=3,invocationTimeOut = 200000000)
+	public void frame() throws InterruptedException
+	{
 		System.setProperty("webdriver.chrome.driver",".//drivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt");
@@ -20,7 +23,6 @@ public class FramesSample {
 		button.click();
 		Alert a = driver.switchTo().alert();
 		a.accept();
-
 	}
 
 }
